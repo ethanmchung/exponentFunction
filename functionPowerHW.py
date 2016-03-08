@@ -1,6 +1,4 @@
-def power():
-	base = int(input("Give me a base "))
-	exponent = int(input("Give me an exponent ")) 
+def power(base, exponent):
 	
 	newNumber = base
 	#one is subtracted from the exponent variable, so when the user uses positive exponent '1', the output is not the base * the base
@@ -22,6 +20,10 @@ def power():
 	elif exponent == 0:
 		newNumber = 1
 		
-	print(newNumber)
+	return(newNumber)
 
-power()
+
+base = int(input("Give me a base "))
+exponent = int(input("Give me an exponent ")) 
+	
+print(power(base,exponent))
